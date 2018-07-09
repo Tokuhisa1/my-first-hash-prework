@@ -26,9 +26,12 @@ def retrieval
 end
 
 def adding
-  shipping_manifest
+  new_manifest = shipping_manifest
   # Add 2 muskets to the shipping_manifest hash below
+  new_manifest["muskets"] = 2
   # Add 4 gun powder to the shipping_manifest hash
   # below
+  new_manifest["gun powder"] = 4
   # Return the shipping_manifest hash below
+  new_manifest
 end
